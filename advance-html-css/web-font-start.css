@@ -1,5 +1,26 @@
 /* General setup */
 
+@font-face {
+    font-family: 'copperplate';
+    src: url('fonts/copperplatecc-bold-webfont.woff2') format('woff2'),
+         url('fonts/copperplatecc-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('fonts/fontquicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
   font-size: 10px;
   margin: 0;
@@ -15,15 +36,20 @@ body {
 /* Typography */
 
 h1 {
-  font-size: 3.2rem;
+    font-family: 'copperplate','Times New Roman', Times, serif;
+    font-size: 3.2rem;
 }
 
 h2 {
+font-family: 'copperplate','Times New Roman', Times, serif;
+
   font-size: 2.4rem;
 }
 
 p {
+  font-family: 'quicksand','Times New Roman', Times, serif;
+
   font-size: 1.4rem;
   line-height: 1.6;
   word-spacing: 0.6rem;
-}
+    }
