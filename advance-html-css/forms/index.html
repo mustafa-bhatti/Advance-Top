@@ -15,13 +15,26 @@
         <input type="text" id="last_name" placeholder="Enter..." name="last_name">
         <label for="age">Age</label>
         <input type="number" id="age" placeholder="Enter..." name="age">
-        <div>
+        <div class="col-wrap">
             <label for="dob">Date of Birth</label>
             <input type="date" id="dob" placeholder="Enter..." name="dob">
-            <div>
-                <label for="textarea">Comments</label>
-                <textarea id="textarea">Enter your text</textarea>
-            </div>
+            
+            <label for="textarea">Comments</label>
+            <textarea id="textarea">Enter your text</textarea>
+
+            <select name="jets" title="Jets">
+                <optgroup label="American Jets">
+                <option value="F-16">F-16</option>
+                <option value="F-22">F-22</option>
+                <option value="F35" selected>F35-Lightning</option>
+                <option value="B-2">B-2</option>
+                </optgroup>
+                <optgroup label="Russian Jets">
+                    <option value="Mig-21">Mig-21</option>
+                    <option value="Su-30">Su-30</option>
+
+                </optgroup>
+            </select>
         </div>
         <input type="button" value="Submit">
 
