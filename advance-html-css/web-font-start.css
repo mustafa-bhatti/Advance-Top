@@ -43,14 +43,16 @@ h1 {
 }
 
 h2 {
-font-family: 'Bebas Neue','copperplate','Times New Roman', Times, serif;
-
+font-family: 'Bebas Neue','Times New Roman', Times, serif;
+    letter-spacing: 1ch;
   font-size: 2.4rem;
+  background: green;
+  box-shadow:10px 5px 10px red;
 }
 
 p {
   font-family: 'quicksand','Times New Roman', Times, serif;
-
+  max-inline-size: 66ch;
   font-size: 1.4rem;
   line-height: 1.6;
   word-spacing: 0.6rem;
