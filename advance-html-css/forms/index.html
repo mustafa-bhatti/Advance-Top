@@ -9,34 +9,66 @@
 <body>
     <h1>Sign Up Form</h1>
     <form action="#" method="get">
-        <label for="first_name">First Name</label>
-        <input type="text" id="first_name" placeholder="Enter..." name="first_name">
+        <fieldset>
+            <legend>Contact Details</legend>
+        <label for="first_name"><span>First Name</span><strong><span aria-label="required"> *</span></strong></label>
+        <input type="text" id="first_name" required placeholder="Enter..." name="first_name">
         <label for="last_name">Last Name</label>
         <input type="text" id="last_name" placeholder="Enter..." name="last_name">
         <label for="age">Age</label>
         <input type="number" id="age" placeholder="Enter..." name="age">
+        </fieldset>
+        <fieldset>
+            <legend>Master</legend>
         <div class="col-wrap">
-            <label for="dob">Date of Birth</label>
-            <input type="date" id="dob" placeholder="Enter..." name="dob">
-            
-            <label for="textarea">Comments</label>
-            <textarea id="textarea">Enter your text</textarea>
+                
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" placeholder="Enter..." name="dob">
+                
+                <label for="textarea">Comments</label>
+                <textarea id="textarea" placeholder="Enter Your Text" required minlength="3"></textarea>
 
-            <select name="jets" title="Jets">
-                <optgroup label="American Jets">
-                <option value="F-16">F-16</option>
-                <option value="F-22">F-22</option>
-                <option value="F35" selected>F35-Lightning</option>
-                <option value="B-2">B-2</option>
-                </optgroup>
-                <optgroup label="Russian Jets">
-                    <option value="Mig-21">Mig-21</option>
-                    <option value="Su-30">Su-30</option>
+                <select name="jets" title="Jets">
+                    <optgroup label="American Jets">
+                    <option value="F-16">F-16</option>
+                    <option value="F-22">F-22</option>
+                    <option value="F35" selected>F35-Lightning</option>
+                    <option value="B-2">B-2</option>
+                    </optgroup>
+                    <optgroup label="Russian Jets">
+                        <option value="Mig-21">Mig-21</option>
+                        <option value="Su-30">Su-30</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+        <h1>Pizza Toppings</h1>
 
-                </optgroup>
-            </select>
-        </div>
+<fieldset>
+    <legend>What Pizza Topping Would you like?</legend>
+    <div>
+      <input type="checkbox" id="sausage" name="topping" value="sausage">
+      <label for="sausage">Sausage</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="onions" name="topping" value="onions">
+      <label for="onions">Onions</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+      <label for="pepperoni">Pepperoni</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+      <label for="mushrooms">Mushrooms</label>
+    </div>
+</fieldset>
+
         <input type="button" value="Submit">
+        <button type="reset" value="reset">Reset</button>
 
 
 
