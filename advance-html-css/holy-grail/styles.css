@@ -9,6 +9,11 @@ html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 100px 100px 500px 100px ;
+  grid-template-columns: 300px 1100px;
+  gap: 20px 20px;
+
 }
 
 .container div {
@@ -16,15 +21,17 @@ html {
   font-size: 32px;
   font-family: Helvetica;
   font-weight: bold;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 15px;
 }
 
 .header {
+  grid-area: 1 / 1 / 1 / -1;
   background-color: #006157;
 }
 
 .sidebar {
+  grid-area: 2 / 1 / -2 / 1;
   background-color: #005B94;
 }
 
@@ -38,6 +45,8 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-column-start: 1;
+  grid-column-end:3 ;
 }
 
 .article p {
