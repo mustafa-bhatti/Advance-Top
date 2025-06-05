@@ -31,7 +31,7 @@ html {
 }
 
 .sidebar {
-  grid-area: 2 / 1 / -2 / 1;
+  grid-area: 2 / 1 / 4 / 1;
   background-color: #005B94;
 }
 
