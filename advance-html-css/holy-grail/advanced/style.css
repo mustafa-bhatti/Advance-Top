@@ -37,7 +37,6 @@
 }
 .menu ul {
     display: grid;
-    grid-template-rows: 1;
     grid-template-columns: repeat(4,1fr);
     list-style: none;
 }
@@ -47,16 +46,23 @@
 }
 
 .sidebar {
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  gap: 50px;
   background-color: #C50208;
   grid-row: 2 / 4;
 }
-
+.side-content,.photo{
+    display: grid;
+    align-items: center;
+}
 .sidebar .photo {
   background-color: white;
   color: black;
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
+
 }
 
 
@@ -65,6 +71,7 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+
 }
 
 .nav {
