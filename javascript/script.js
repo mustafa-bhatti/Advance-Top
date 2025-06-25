@@ -30,5 +30,18 @@ const book = {
         return `${book.nameBook} by ${book.author},${book.pages} pages, ${isRead(book.read)} `;
     }
 }
+this.color = 'red';
+// console.log( window.color);
 
-console.log(book.info())
+// console.log(book.info())
+
+function newBook(name,author){
+    let BookName = name;
+    return {BookName , author}
+}
+
+const book1 =newBook("Hobbit","J.R.R")
+
+const Name = book1.BookName;
+const author = book1.author;
+console.log({Name,author})
