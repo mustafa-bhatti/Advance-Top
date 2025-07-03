@@ -36,12 +36,25 @@ this.color = 'red';
 // console.log(book.info())
 
 function newBook(name,author){
-    let BookName = name;
-    return {BookName , author}
+    let rating=0;
+
+    const getRating = () => rating;
+    const giveRating = () => rating++;
+    const decreaseRating = () => rating--;
+
+    return {name,author,getRating,giveRating,decreaseRating}
 }
 
 const book1 =newBook("Hobbit","J.R.R")
+book1.giveRating()
+book1.giveRating()
+book1.giveRating()
+book1.giveRating()
+book1.decreaseRating()// results in 3 bookRating
 
-const Name = book1.BookName;
-const author = book1.author;
-console.log({Name,author})
+
+console.log({
+    BookName:book1.name,
+    BookRating: book1.getRating()
+})
+
