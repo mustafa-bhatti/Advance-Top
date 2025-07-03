@@ -14,6 +14,10 @@ module.exports = {
             template: "./src/index.html",
         }),
     ],
+    devtool: "eval-source-map",
+    devServer: {
+        watchFiles: ["./src/index.html"],
+    },
     module: {
         rules: [
             {
