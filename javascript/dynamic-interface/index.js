@@ -1,3 +1,3 @@
-import { dropdown } from "./dropdown.js";
+import { dropdownHover } from './dropdown.js';
 
-dropdown("drop-btn","dropdown-menu")
+dropdownHover('drop-btn', 'dropdown-menu');

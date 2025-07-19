@@ -2,6 +2,19 @@ body {
   margin: 0;
   padding: 0;
 }
+button {
+  background-color: white;
+  border: 1px solid gray;
+  outline: none;
+  cursor: pointer;
+  min-width: 70px;
+  max-width: 100px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
 .hide {
   visibility: hidden;
 }
