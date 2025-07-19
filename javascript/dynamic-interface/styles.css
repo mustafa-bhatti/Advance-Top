@@ -21,12 +21,19 @@ button {
 ul {
   margin: 0;
   padding: 0;
+  margin-left: 10px;
+}
+li:hover {
+  background-color: rgba(128, 128, 128, 0.363);
 }
 li {
+  padding: 10px;
   list-style: none;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  /* border: 1px solid rgba(0, 0, 0, 0.4); */
   max-width: 80px;
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   cursor: pointer;
+  min-height: 30px;
+  border-radius: 7px;
 }
