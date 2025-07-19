@@ -1,9 +1,3 @@
-const dropdown = function(buttonClass,dropDownClass){
-    const button = document.querySelector(`.${buttonClass}`)
-    const dropdownDiv = document.querySelector(`.${dropDownClass}`)
-    dropdownDiv.classList.toggle("hide")
-    button.addEventListener("click",()=>{
-        dropdownDiv.classList.toggle("hide")
-    })
-}
+import { dropdown } from "./dropdown.js";
+
 dropdown("drop-btn","dropdown-menu")
