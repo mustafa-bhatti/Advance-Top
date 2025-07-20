@@ -4,5 +4,5 @@ const dropdownHover = function (buttonClass, dropDownClass) {
   button.addEventListener('mouseover', () => {
     dropdownDiv.classList.toggle('hide');
   });
-};
-export { dropdownHover };
+}
+module.exports = dropdownHover

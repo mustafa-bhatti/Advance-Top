@@ -1,0 +1,14 @@
+{
+  "name": "dropdown-tor-test",
+  "version": "1.0.0",
+  "main": "dropdown.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ghulam Mustafa Bhatti <gmbhatti42@gmail.com>",
+  "license": "See License in LICENSE",
+  "description": "A simple class toggling module to show/hide dropdown on hover",
+  "keywords": [
+    "dropdown"
+  ]
+}
