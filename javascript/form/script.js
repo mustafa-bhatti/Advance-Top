@@ -56,7 +56,7 @@ postal.addEventListener('input', () => {
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (form.checkValidity()) {
-    end.textContent="Yayyyyy!! You did it"
+    end.textContent = 'Yayyyyy!! You did it';
   } else {
     form.reportValidity();
   }
