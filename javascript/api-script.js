@@ -3,22 +3,13 @@ const refreshBtn = document.querySelector('button');
 const form = document.querySelector('form');
 const query = document.querySelector('#search');
 async function fetchGif(query) {
-  await fetch(
+  const response = await fetch(
     `https://api.giphy.com/v1/gifs/translate?api_key=aWFQln3fRt0IuEDfY6MvZ6q7dazqJw9s&s=${query}`,
     { mode: 'cors' }
-  )
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (response) {
-      console.log(response);
-      // console.log(response.data.images);
-      img.src = response.data.images.original.url;
-    })
-    .catch(function (response) {
-      alert(response);
-      console.log('ERROR: ', response);
-    });
+  );
+  const gifData = await response.json();
+  console.log(gifData);
+  img.src = gifData.data.images.original.url;
 }
 fetchGif('Football');
 refreshBtn.addEventListener('click', () => {
